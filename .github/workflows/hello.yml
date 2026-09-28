@@ -1,0 +1,7 @@
+name: hello
+on: workflow_dispatch
+jobs:
+  hello:
+    runs-on: [self-hosted, rh-x64-2vcpu-4gib]
+    steps:
+      - run: echo "hello from RunHarbor" && uname -a && nproc && free -h
